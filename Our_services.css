@@ -1,0 +1,124 @@
+#services h2 {
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #0066ff, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.services_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services_list div {
+  text-align: center;
+  font-weight: 500;
+
+  height: 400px;
+  width: 300px;
+  max-width: 100%;
+  background: #ffffff;
+  box-shadow: 0 12px 24px rgba(7, 74, 99, 0.12),
+    0 8px 16px rgba(7, 74, 99, 0.08), 0 4px 8px rgba(7, 74, 99, 0.05);
+
+  margin: 5px 0px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.services_list button {
+  background-color: #0066ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px;
+  
+}
+
+.services_list div img {
+  border-radius: 8px;
+  margin-top: 10px;
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+}
+#management_team h2 {
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #0066ff, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#management_team div p {
+  text-align: center;
+
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.manage_team {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.manage_team div {
+  text-align: center;
+  font-weight: 500;
+
+  height: 350px;
+  width: 250px;
+  max-width: 100%;
+  background: #ffffff;
+  box-shadow: 0 12px 24px rgba(7, 74, 99, 0.12),
+    0 8px 16px rgba(7, 74, 99, 0.08), 0 4px 8px rgba(7, 74, 99, 0.05);
+
+  margin: 5px 0px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.manage_team div img {
+  border-radius: 8px;
+  margin-top: 10px;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .services_list {
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .services_list div {
+    width: 90%;
+    margin: 10px 0;
+    
+  }
+
+  .manage_team {
+    flex-direction: column;
+    align-items: center;
+    max-width: 330px;
+    margin: auto;
+  }
+
+  .manage_team div {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
