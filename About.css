@@ -97,6 +97,40 @@ footer a {
   font-size: 28px; /* আইকনের আকার */
 }
 
+.facebook-float-btn {
+  position: fixed; /* স্ক্রলের সময় স্থির রাখতে */
+  bottom: 80px; /* নিচের দিক থেকে দূরত্ব */
+  right: 20px; /* ডান দিক থেকে দূরত্ব */
+  z-index: 9999; /* অন্যান্য কন্টেন্টের উপরে রাখতে */
+
+  /* বাটনের আকার এবং রঙ */
+  width: 60px;
+  height: 60px;
+  background-color: #25d366; /* WhatsApp সবুজ রং */
+  color: white;
+  border-radius: 50%; /* গোলাকার আকৃতি */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* সুন্দর ছায়া */
+
+  /* আইকনকে মাঝখানে আনতে Flexbox ব্যবহার */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Transition */
+  transition: all 0.3s ease;
+  text-decoration: none; /* লিংক থেকে আন্ডারলাইন সরাতে */
+}
+
+/* হোভার এবং অ্যাক্টিভ স্টাইল */
+.facebook-float-btn:hover {
+  background-color: #128c7e; /* গাঢ় সবুজ রং */
+  transform: scale(1.08); /* সামান্য বড় করা */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+.facebook-float-btn i {
+  font-size: 28px; /* আইকনের আকার */
+}
+
 /* * মোবাইল রেসপনসিভনেস (ছোট স্ক্রিনের জন্য) 
          * ======================================
          */
@@ -108,6 +142,16 @@ footer a {
     right: 15px;
   }
   .whatsapp-float-btn i {
+    font-size: 26px;
+  }
+
+  .facebook-float-btn {
+    width: 55px; /* ছোট স্ক্রিনে সামান্য ছোট আকার */
+    height: 55px;
+    bottom: 75px;
+    right: 15px;
+  }
+  .facebook-float-btn i {
     font-size: 26px;
   }
 }
