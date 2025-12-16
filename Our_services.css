@@ -47,6 +47,37 @@
   width: 100%;
   object-fit: cover;
 }
+.services_list div:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* --- স্ক্রল অ্যানিমেশন স্টাইল শুরু --- */
+
+/* প্রাথমিক লুকানো অবস্থা (সকল অ্যানিমেটেড কার্ডের জন্য) */
+/* .card ক্লাসটি আপনি সার্ভিস সেকশনে ব্যবহার করেছেন */
+#services .card {
+  opacity: 0; /* প্রথমে কার্ড অদৃশ্য থাকবে */
+  transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* মসৃণ অ্যানিমেশনের জন্য ট্রানজিশন */
+}
+
+/* বাম দিক থেকে স্লাইড করার জন্য প্রাথমিক অবস্থান */
+.revael-left {
+  transform: translateX(-100px); /* বাম দিকে 100px সরানো থাকবে */
+}
+
+/* ডান দিক থেকে স্লাইড করার জন্য প্রাথমিক অবস্থান */
+.revael-right {
+  transform: translateX(100px); /* ডান দিকে 100px সরানো থাকবে */
+}
+
+/* অ্যানিমেশন ট্রিগার করার পর চূড়ান্ত অবস্থা (JavaScript এই ক্লাসটি যোগ করবে) */
+.is-visible {
+  opacity: 1 !important; /* দৃশ্যমান হবে */
+  transform: translateX(0) !important; /* তার আসল অবস্থানে ফিরে আসবে */
+}
+
 #management_team h2 {
   margin-top: 35px;
   text-align: center;
@@ -94,6 +125,43 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+/* সকল অ্যানিমেটেড About কার্ডের প্রাথমিক অবস্থা */
+.about-card {
+  /* (আপনার অন্যান্য স্টাইল যেমন padding, background, border) */
+  opacity: 0; /* কার্ডটি প্রথমে অদৃশ্য থাকবে */
+  transition: transform 1s ease-out, opacity 1s ease-out; /* মসৃণ ট্রানজিশন */
+}
+
+/* বাম থেকে আসার জন্য (slide-left) - প্রাথমিক অবস্থান বাম দিকে সরিয়ে রাখা */
+.about-card.slide-left {
+  transform: translateX(-100px);
+}
+
+/* ডান থেকে আসার জন্য (slide-right) - প্রাথমিক অবস্থান ডান দিকে সরিয়ে রাখা */
+.about-card.slide-right {
+  transform: translateX(100px);
+}
+
+/* যখন কার্ডটি দৃশ্যমান হবে (এই ক্লাসটি JS দিয়ে যোগ করা হবে) */
+.about-card.is-visible {
+  opacity: 1; /* দৃশ্যমান হবে */
+  transform: translateX(0); /* তার আসল অবস্থানে ফিরে আসবে */
+}
+
+/* আপনি যদি চান যে Service এবং About সেকশনের জন্য একই স্টাইল ব্যবহার করবেন, 
+   তাহলে আপনি এই ক্লাসগুলিকে একসাথে ব্যবহার করতে পারেন: */
+/*
+.service-card, .about-card {
+    opacity: 0; 
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.service-card.slide-left, .about-card.slide-left {
+    transform: translateX(-100px); 
+}
+... ইত্যাদি
+*/
+
 .bangla_text {
   font-family: "Tiro bangla", serif;
 }
