@@ -64,12 +64,12 @@
 
 /* বাম দিক থেকে স্লাইড করার জন্য প্রাথমিক অবস্থান */
 .revael-left {
-  transform: translateX(-100px); /* বাম দিকে 100px সরানো থাকবে */
+  transform: translateX(-50px); /* বাম দিকে 100px সরানো থাকবে */
 }
 
 /* ডান দিক থেকে স্লাইড করার জন্য প্রাথমিক অবস্থান */
 .revael-right {
-  transform: translateX(100px); /* ডান দিকে 100px সরানো থাকবে */
+  transform: translateX(50px); /* ডান দিকে 100px সরানো থাকবে */
 }
 
 /* অ্যানিমেশন ট্রিগার করার পর চূড়ান্ত অবস্থা (JavaScript এই ক্লাসটি যোগ করবে) */
@@ -135,12 +135,12 @@
 
 /* বাম থেকে আসার জন্য (slide-left) - প্রাথমিক অবস্থান বাম দিকে সরিয়ে রাখা */
 .about-card.slide-left {
-  transform: translateX(-100px);
+  transform: translateX(-50px);
 }
 
 /* ডান থেকে আসার জন্য (slide-right) - প্রাথমিক অবস্থান ডান দিকে সরিয়ে রাখা */
 .about-card.slide-right {
-  transform: translateX(100px);
+  transform: translateX(50px);
 }
 
 /* যখন কার্ডটি দৃশ্যমান হবে (এই ক্লাসটি JS দিয়ে যোগ করা হবে) */

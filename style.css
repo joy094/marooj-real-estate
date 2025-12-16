@@ -8,6 +8,7 @@ body {
   /* max-width: 900px; */
 }
 body {
+  overflow-x: hidden;
   margin: 0;
   background: #eeebe1;
   padding: 0.5rem 1rem;
