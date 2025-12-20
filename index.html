@@ -59,15 +59,38 @@
       <!-- home pafe content -->
 
       <section id="home">
-        <div class="home_img">
-          <img
-            src="./img/maroj_home_page.png"
-            alt="maroj real estate photo"
-            style="width: 100%"
-          />
-          <h1 class="animated-text">
-            <!-- MAROOJ <br />REAL ESTATE -->
-          </h1>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./img/landoffer1.jpeg" style="width: 100%" />
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./img/Landoffer@.jpeg" style="width: 100%" />
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./img/MAROOJ REAL ESTATE-01.png" style="width: 100%" />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </section>
 
@@ -173,7 +196,7 @@
             <p>Md.Sultan Mahmud</p>
             <p>Managing Director</p>
           </div>
-          <div class=" about-card revael-right">
+          <div class="about-card revael-right">
             <img
               src="./management_team_photo/Molla Khalid Saifulla.png.jpg"
               alt="MD RASHED KHAN 
@@ -183,7 +206,7 @@
             <p>Director</p>
           </div>
 
-          <div class=" about-card revael-left">
+          <div class="about-card revael-left">
             <img
               src="./management_team_photo/Md. Mijanur Rahman.jpg"
               alt="Md. Mijanur Rahman"
@@ -192,7 +215,7 @@
             <p>Director</p>
           </div>
 
-          <div class=" about-card revael-right">
+          <div class="about-card revael-right">
             <img
               src="/management_team_photo/Md. Ruhul Amin.png.jpg"
               alt="Ruhul Amin"
